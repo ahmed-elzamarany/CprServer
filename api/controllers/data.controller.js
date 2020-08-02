@@ -1,6 +1,6 @@
 let data = []
 
-exports.receive = async (req, res) => {
+exports.send = async (req, res) => {
 
 	try {
 		let read = req.body.read
@@ -21,12 +21,13 @@ exports.receive = async (req, res) => {
 
 }
 
-exports.send = async (req, res) => {
+exports.get = async (req, res) => {
 	try {
+		let sending =data
 		data=[]
 			return res.json({
 				data: {
-					data
+					sending
 				}
 			})
 	} catch (err) {
