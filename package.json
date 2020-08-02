@@ -1,0 +1,17 @@
+{
+  "name": "cpr_server",
+  "version": "1.0.0",
+  "description": "this server handels the connection between the app in hololense and the hardware in the cpr dunnmy",
+  "main": "server.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "ahmed elzamarany",
+  "license": "ISC"
+}
