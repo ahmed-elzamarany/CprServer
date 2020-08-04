@@ -25,11 +25,10 @@ exports.get = async (req, res) => {
 	try {
 		let sending =data
 		data=[]
-			return res.json({
-				data: {
-					sending
-				}
-			})
+			return res.json(
+					sending.length
+				
+			)
 	} catch (err) {
 		res.status(400).json({
 			error: {
